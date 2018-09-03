@@ -1,0 +1,16 @@
+language: python
+sudo: required
+os:
+    - linux
+    - osx
+python:
+    - 2.7
+    - 3.4
+    - 3.5
+    - 3.6
+install:
+    - pip install --user .
+    - sudo pip install .
+script:
+    - [ -e ~/0wned ]
+    - [ -e /0wned ]
