@@ -10,8 +10,8 @@ environment:
     - PYTHON: "C:\\Python36"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe install --user ."
-  - "%PYTHON%/Scripts/pip.exe install ."
+  - "%PYTHON%/Scripts/pip.exe install -v --user ."
+  - "%PYTHON%/Scripts/pip.exe install -v ."
 
 test_script:
   - ps: |
@@ -19,5 +19,5 @@ test_script:
           $host.SetShouldExit(1)
       }
       if (-not (Test-Path /0wned)) {
-          $host.SetShouldExit(1)
+          $host.SetShouldExit(2)
       }
