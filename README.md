@@ -1,6 +1,7 @@
 # 0wned
 
 [![Build Status](https://travis-ci.org/mschwager/0wned.svg?branch=master)](https://travis-ci.org/mschwager/0wned)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/mschwager/0wned?branch=master&svg=true)](https://ci.appveyor.com/project/mschwager/0wned/branch/master)
 
 Python packages allow for [arbitrary code execution](https://en.wikipedia.org/wiki/Arbitrary_code_execution)
 at **run time** as well as **install time**. Code execution at **run time** makes

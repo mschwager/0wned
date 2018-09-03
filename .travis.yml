@@ -1,19 +1,19 @@
 language: python
 sudo: required
 os:
-    - linux
-    - osx
+  - linux
+  - osx
 python:
-    - 2.7
-    - 3.4
-    - 3.5
-    - 3.6
+  - 2.7
+  - 3.4
+  - 3.5
+  - 3.6
 matrix:
-    allow_failures:
-        - os: osx
+  allow_failures:
+    - os: osx
 install:
-    - pip install .
-    - sudo pip install .
+  - pip install .
+  - sudo pip install .
 script:
-    - sh -c '[ -e ~/0wned ]'
-    - sh -c '[ -e /0wned ]'
+  - sh -c '[ -e ~/0wned ]'
+  - sh -c '[ -e /0wned ]'

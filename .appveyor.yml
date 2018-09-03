@@ -13,4 +13,4 @@ install:
   - "%PYTHON%/Scripts/pip.exe install ."
 
 test_script:
-  - "Test-Path ~/0wned"
+  - ps: Test-Path ~/0wned
