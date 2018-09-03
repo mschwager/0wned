@@ -16,8 +16,8 @@ install:
 test_script:
   - ps: |
       if (-not (Test-Path ~/0wned)) {
-          $host.SetShouldExit($LastExitCode)
+          $host.SetShouldExit(1)
       }
       if (-not (Test-Path /0wned)) {
-          $host.SetShouldExit($LastExitCode)
+          $host.SetShouldExit(1)
       }
