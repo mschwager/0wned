@@ -12,5 +12,5 @@ install:
     - pip install .
     - sudo pip install .
 script:
-    - sh '[ -e ~/0wned ]'
-    - sh '[ -e /0wned ]'
+    - sh -c '[ -e ~/0wned ]'
+    - sh -c '[ -e /0wned ]'
