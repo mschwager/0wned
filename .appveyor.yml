@@ -10,7 +10,9 @@ environment:
     - PYTHON: "C:\\Python36"
 
 install:
+  - "%PYTHON%/Scripts/pip.exe install --user ."
   - "%PYTHON%/Scripts/pip.exe install ."
 
 test_script:
+  - ps: Test-Path ~/0wned
   - ps: Test-Path /0wned
