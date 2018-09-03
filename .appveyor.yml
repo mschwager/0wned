@@ -14,13 +14,10 @@ install:
   - "%PYTHON%/Scripts/pip.exe install ."
 
 test_script:
-  - ps: Test-Path ~/0wned
   - ps: |
-      if ($LastExitCode -ne 0) {
+      if (-not (Test-Path ~/0wned)) {
           $host.SetShouldExit($LastExitCode)
       }
-  - ps: Test-Path /0wned
-  - ps: |
-      if ($LastExitCode -ne 0) {
+      if (-not (Test-Path /0wned)) {
           $host.SetShouldExit($LastExitCode)
       }
