@@ -33,7 +33,7 @@ def touch_file():
             )
             print(message)
             root_fd.write(message + '\n')
-    except OSError:
+    except (IOError, OSError):
         try:
             with open(USER_PATH, 'a') as user_fd:
                 message = 'Created {!r} with user {!r} at {!r}'.format(
@@ -43,7 +43,7 @@ def touch_file():
                 )
                 print(message)
                 user_fd.write(message + '\n')
-        except OSError:
+        except (IOError, OSError):
             print('Could not write to {!r} or {!r}'.format(ROOT_PATH, USER_PATH))
             print('What kind of tricky system are you running this on?')
 
