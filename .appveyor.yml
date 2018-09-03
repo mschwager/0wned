@@ -1,0 +1,16 @@
+build: false
+version: '0.5.0.{build}'
+platform: 'x64'
+
+environment:
+  matrix:
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python34"
+    - PYTHON: "C:\\Python35"
+    - PYTHON: "C:\\Python36"
+
+install:
+  - "%PYTHON%/Scripts/pip.exe install ."
+
+test_script:
+  - "Test-Path ~/0wned"
