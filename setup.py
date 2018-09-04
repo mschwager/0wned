@@ -63,7 +63,7 @@ class PostInstallCommand(install):
 setup(
     name='0wned',
     version='0.5.0',
-    description='Be careful when installing Python packages...',
+    description='Code execution via Python package installation.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/mschwager/0wned',
@@ -79,6 +79,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Topic :: Security',
     ],
     install_requires=[],
     tests_require=[],
