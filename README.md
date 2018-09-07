@@ -43,6 +43,7 @@ You should always be weary of Python packages you're installing on your system,
 especially when using root/administrative privileges. There are a few ways to help
 mitigate these types of attacks:
 
+* Install only [binary distribution Python wheels](https://pythonwheels.com/) using the `--only-binary :all:` flag. This avoids arbitrary code execution on installation (avoids `setup.py`).
 * As mentioned above, install packages [with the local user](https://packaging.python.org/tutorials/installing-packages/#installing-to-the-user-site) using the `--user` flag.
 * Install packages in [hash-checking mode](https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode) using the `--require-hashes` flag. This will protect against remote tampering and ensure you're getting the package you intend to.
 * Double check that you've spelled the package name correctly. There may be malicious packages [typosquatting](https://en.wikipedia.org/wiki/Typosquatting) under a similar name.
