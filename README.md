@@ -39,7 +39,7 @@ Created '/home/tempuser/0wned' with user 'tempuser' at 1536011624
 
 # Prevention
 
-You should always be weary of Python packages you're installing on your system,
+You should always be wary of Python packages you're installing on your system,
 especially when using root/administrative privileges. There are a few ways to help
 mitigate these types of attacks:
 
